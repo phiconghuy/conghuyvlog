@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylsheet" href="./fontawesome-free-5.13.0-web/css/all.min.css"/>
+	<script src="./fontawesome-free-5.13.0-web/js/all.min.js"></script>
+	<title>Hover Effects</title>
+	<style>
+		.container{
+			width:1200px;
+			margin:0 auto;
+			display:flex;
+			align-items:center;
+			justify-content:center;
+		}
+		.box{
+			background-color:red;
+			width:100%;
+			height:350px;
+			margin:0 15px;
+			border-radius:15px;
+			overflow:hidden;
+			display:flex;
+			justify-content:center;
+			flex-wrap:wrap;
+			margin-top:0;
+		}
+		.box .wrap-icon{
+			width:100%;
+			height:100%;
+			background-color:orange;
+			transition:.9s;
+			position:relative;
+		}
+		.box .wrap-icon .icon{
+			position:absolute;
+			top:50%;
+			left:50%;
+			transform:translate(-50%,-50%);
+			font-size:50px;
+			color:white;
+			transition:.9s;
+		}
+		.box:hover .wrap-icon{
+			width:70px;
+			height:70px;
+			margin-top:3rem;
+			border-radius:100%;
+		}
+		.box:hover .wrap-icon .icon{
+			font-size:30px;
+		}
+		/** Content **/
+		.box .content{
+			color:white;
+			padding:0 1.5rem;
+			font-family: sans-serif;
+		}
+		.box .content h3{
+			margin-bottom:0.5rem;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			<div class="wrap-icon">
+				<i class="fas fa-search icon"></i>
+			</div>
+			<div class="content">
+				<h3>This is Title One</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae excepturi, itaque officia sed velit reiciendis amet aliquid recusandae dignissimos laudantium nulla a labore nihil nam vel quaerat est? Aspernatur, eligendi</p>
+			</div>
+		</div>
+		<div class="box">
+			<div class="wrap-icon">
+				<i class="fas fa-user icon"></i>
+			</div>
+			<div class="content">
+				<h3>This is Title Two</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae excepturi, itaque officia sed velit reiciendis amet aliquid recusandae dignissimos laudantium nulla a labore nihil nam vel quaerat est? Aspernatur, eligendi</p>
+			</div>
+		</div>
+		<div class="box">
+			<div class="wrap-icon">
+				<i class="fas fa-map-marker-alt icon">
+				</i>
+			</div>
+			<div class="content">			
+				<h3>This is Title Three</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae excepturi, itaque officia sed velit reiciendis amet aliquid recusandae dignissimos laudantium nulla a labore nihil nam vel quaerat est? Aspernatur, eligendi</p></div>
+		</div>
+	</div>
+</body>
+</html>
